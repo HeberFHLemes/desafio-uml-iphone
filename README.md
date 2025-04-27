@@ -18,17 +18,17 @@ direction TB
 	    +atender() void
 	    +iniciarCorreioVoz() void
     }
-    class NavegadorNaInternet {
+    class NavegadorInternet {
 	    +exibirPagina(url: String) void
 	    +adicionarNovaAba() void
 	    +atualizarPagina() void
     }
     <<interface>> ReprodutorMusical
     <<interface>> AparelhoTelefonico
-    <<interface>> NavegadorNaInternet
+    <<interface>> NavegadorInternet
     IPhone ..|> ReprodutorMusical
     IPhone ..|> AparelhoTelefonico
-    IPhone ..|> NavegadorNaInternet
+    IPhone ..|> NavegadorInternet
 ```
 
 <hr>
