@@ -28,7 +28,7 @@ direction TB
     <<interface>> NavegadorInternet
     IPhone ..|> ReprodutorMusical
     IPhone ..|> AparelhoTelefonico
-    IPhone ..|> NavegadorNaInternet
+    IPhone ..|> NavegadorInternet
 ```
 
 <hr>
