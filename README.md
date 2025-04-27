@@ -7,39 +7,30 @@
 classDiagram
 direction TB
     class IPhone {
-        +tocar()
-        +pausar()
-        +selecionarMusica(String musica)
-        +ligar(String numero)
-        +atender()
-        +iniciarCorreioVoz()
-        +exibirPagina(String url)
-        +adicionarNovaAba()
-        +atualizarPagina()
     }
     class ReprodutorMusical {
-	    +tocar()
-	    +pausar()
-	    +selecionarMusica(String musica)
+	    +tocar() void
+	    +pausar() void
+	    +selecionarMusica(musica: String) void
     }
     class AparelhoTelefonico {
-	    +ligar(String numero)
-	    +atender()
-	    +iniciarCorreioVoz()
+	    +ligar(numero: String) void
+	    +atender() void
+	    +iniciarCorreioVoz() void
     }
     class NavegadorNaInternet {
-	    +exibirPagina(String url)
-	    +adicionarNovaAba()
-	    +atualizarPagina()
+	    +exibirPagina(url: String) void
+	    +adicionarNovaAba() void
+	    +atualizarPagina() void
     }
-    <<Class>> IPhone
-    <<Interface>> ReprodutorMusical
-    <<Interface>> AparelhoTelefonico
-    <<Interface>> NavegadorNaInternet
+    <<interface>> ReprodutorMusical
+    <<interface>> AparelhoTelefonico
+    <<interface>> NavegadorNaInternet
     IPhone ..|> ReprodutorMusical
     IPhone ..|> AparelhoTelefonico
     IPhone ..|> NavegadorNaInternet
 ```
+
 <hr>
 
 ### Contexto e Proposta do desafio (DIO - Trilha Java Básico - Programação Orienta a Objetos)
